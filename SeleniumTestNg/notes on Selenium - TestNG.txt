@@ -1,0 +1,35 @@
+Given:
+- WebDriverFacade delegates to WebDriver
+- ConfigurationBase - configuration classes load themselves
+
+Problems:
+- C# pattern: property injection executes at test startup. Scoped to test fixture.
+- TestNG instantiates each test class at startup and resolves its dependencies. This creates a driver per fixture at startup. If the drivers are limited remote web drivers (as they must be for IoS), there would be no guarantee that the first to fixture execute gets the remotes.
+- We actually get 3 chrome process for 2 tests. 
+- We want to adhere to SRP with small components. Each of these must work with the same instance of the WebDriver
+
+Missing information / knowledge
+- I have not identified an equivalent of Assembly teardown. While there is an "@AfterSuite" method, I don't entirely understand how it works. 
+- How to capture log output from TestNG? Something to do with TestListeners
+
+
+Options requiring study or significant work
+- Guice as a Service Locator?
+- Guice Custom scopes.
+
+Characteristic of all solutions
+- Should solve the 
+
+Options:
+- Static or thread static WebDriver instance (ambient context pattern -- discouraged by Guice documentation)
+
+- Pass the WebDriver instance to each object that requires it.
+
+D:\temp\src\src\com\daptiv\automation\framework\EnterpriseConfigurationImpl.java
+D:\home\cliff\dev\gitdaptiv\PpmMobile\src\test\webdriver\src\com\daptiv\automation\framework\EnterpriseConfigurationImpl.java
+
+D:/home/cliff/dev/gitdaptiv/PpmMobile/src/test/webdriver/src/build/tools/bin/win/chromedriver.exe
+
+Configuration defects:
+target_Computer not passed
+locations relative to build folder.
