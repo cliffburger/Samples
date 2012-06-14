@@ -8,7 +8,7 @@ namespace BasicAutoFaq
 		{
 			builder.RegisterType<ComplementaryRepo>().As<ICommentRepo>().SingleInstance();
 			// Default would be instance per request.
-			builder.RegisterType<ObjectWhoseConstructorTakesUnregisteredParameters>();
+			builder.RegisterType<ClassForDemonstratingDelegateFactories>();
 			base.Load(builder);
 		}
 	}

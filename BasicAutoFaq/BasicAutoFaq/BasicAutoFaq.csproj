@@ -49,8 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IStupidRepo.cs" />
-    <Compile Include="ObjectWhoseConstructorTakesUnregisteredParameters.cs" />
+    <Compile Include="ComplementaryRepo.cs" />
+    <Compile Include="ICommentRepo.cs" />
+    <Compile Include="ClassForDemonstratingDelegateFactories.cs" />
+    <Compile Include="OffensiveRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleModule.cs" />

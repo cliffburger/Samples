@@ -14,6 +14,8 @@ namespace BasicAutoFaq
 			DemoBasicResolve();
 
 			FactoryMethodDemo();
+
+			Console.ReadLine();
 		}
 
 		private static void DemoBasicResolve()
@@ -27,8 +29,8 @@ namespace BasicAutoFaq
 
 		private static void FactoryMethodDemo()
 		{
-			Func<string, ObjectWhoseConstructorTakesUnregisteredParameters> factory;
-			factory = _container.Resolve<Func<string, ObjectWhoseConstructorTakesUnregisteredParameters>>();
+			Func<string, ClassForDemonstratingDelegateFactories> factory;
+			factory = _container.Resolve<Func<string, ClassForDemonstratingDelegateFactories>>();
 			var thisWasCreatedViaFactoryMethod = factory("You are not ");
 			thisWasCreatedViaFactoryMethod.Print();
 		}
