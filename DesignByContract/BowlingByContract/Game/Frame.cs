@@ -51,8 +51,8 @@ namespace BowlingByContract.Game
 
         public void Roll(int pinsKnockedDown)
         {
-            Contract.Requires(pinsKnockedDown >= 0);
-            Contract.Requires(pinsKnockedDown <= 10);
+			Contract.Requires<ArgumentException>(pinsKnockedDown >= 0, "Too Low!") ;
+			Contract.Requires<ArgumentException>(pinsKnockedDown <= 10, "Too High!");
 
             Contract.Ensures(this.Rolls <= 2, "Cheater, you can't bowl that many times!");
         }

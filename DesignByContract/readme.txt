@@ -1,6 +1,7 @@
 
 Executing code analysis without the VS studio addin. 
-This allows use of code analysis without VS Ultimate.
+
+Sometimes, the UI will not display. Hacking the project files will allow code analysis if the UI does not display.
 
 Read about code contracts here: http://msdn.microsoft.com/en-us/library/dd264808.aspx
 

@@ -39,7 +39,7 @@ namespace BowlingByContract
                 frame.Roll(3);
                 frame.Roll(1); // Postcondition from contract class should fail
             }
-            catch (Exception ex)
+            catch (ArgumentException ex)
             {
                 Console.WriteLine(ex.Message);
             }
