@@ -2,6 +2,26 @@
 [Tt]humbs.db
 *.DS_Store
 
+#Java files
+*~
+.DS_Store
+.idea
+._*
+artifacts/
+*sass-cache/
+src/resources/css
+src/web.config
+.settings
+bin/
+out/
+test-output
+*.class
+*.iml
+*.log
+testng_local.xml
+src/app/Config.js
+archive/
+
 #Visual Studio files
 *.[Oo]bj
 *.user

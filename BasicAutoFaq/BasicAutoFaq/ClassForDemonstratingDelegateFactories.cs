@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace BasicAutoFaq
 {
@@ -15,11 +16,16 @@ namespace BasicAutoFaq
 
 		public void Print()
 		{
-			foreach(string comment in _commentRepo.Retrieve())
-			{
-				Console.WriteLine("{0} {1} " , _prefix, comment);	
-			}
-			
+            Print(Console.Out);		
 		}
+
+        public void Print(TextWriter writer)
+        {
+            foreach (string comment in _commentRepo.Retrieve())
+            {
+                writer.WriteLine("{0} {1} ", _prefix, comment);
+            }
+
+        }
 	}
 }
