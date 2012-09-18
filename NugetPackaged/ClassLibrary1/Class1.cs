@@ -4,7 +4,7 @@
     {
 		public string WhoAmI()
 		{
-			return "I am class 1. First Class!";
+			return "I am class 2. I love being second class!";
 		}
     }
 }
