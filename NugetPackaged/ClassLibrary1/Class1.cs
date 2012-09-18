@@ -4,7 +4,7 @@
     {
 		public string WhoAmI()
 		{
-			return "I am class 2. I love being second class!";
+			return "I am a class on a branch!";
 		}
     }
 }
