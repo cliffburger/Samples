@@ -78,3 +78,6 @@ packages/
 
 # visual studio database projects
 *.dbmdl
+
+# JetBrains IDE files
+.idea
