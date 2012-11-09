@@ -13,6 +13,10 @@ class LinqVRuby < Thor
   def demo_split
     puts "The quick brown fox jumps over the lazy dog".split(/\s/)
   end
+
+  def aggregate_files_by_extension(start_folder)
+    # TODO:
+  end
 end
 
-LinqVsRubyEnumerations.start(ARGV)
+LinqVRuby.start(ARGV)
