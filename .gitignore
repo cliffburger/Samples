@@ -78,3 +78,6 @@ packages/
 
 # visual studio database projects
 *.dbmdl
+
+#
+[Oo]utput/
