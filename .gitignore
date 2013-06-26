@@ -81,3 +81,6 @@ packages/
 
 #
 [Oo]utput/
+
+#node files
+node_modules/
