@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #OS junk files
 [Tt]humbs.db
 *.DS_Store
@@ -79,5 +80,5 @@ packages/
 # visual studio database projects
 *.dbmdl
 
-#
-[Oo]utput/
+# JetBrains IDE files
+.idea
