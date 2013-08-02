@@ -10,7 +10,7 @@ import 'support/tasks.rb'
 
 desc "Default task"
 task :default do |t|
-    Dir.glob('./support/**/*.rake').each { |r| puts "<run> #{r} </run>" }
+    Dir.glob('./support/**/*.rake').each { |r| puts "<boom> #{r} </boom>" }
 end
 
 desc "Fail task!"
